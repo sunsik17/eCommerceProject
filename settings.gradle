@@ -1,1 +1,2 @@
 rootProject.name = 'eCommerce'
+include 'user-api'
