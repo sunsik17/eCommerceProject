@@ -11,18 +11,18 @@ class EmailSendServiceTest {
 
 	@Autowired
 	private MailgunClient mailgunClient;
-
 	@Test
 	public void sendEmail () {
 	    //given
-		mailgunClient.sendEmail(
+		String result = mailgunClient.sendEmail(
 			SendMailForm
 				.builder()
 				.from("test@test.com")
 				.to("sunsig21c@gmail.com")
 				.subject("send email testing")
 				.text("simple email send test")
-				.build());
+				.build()).getBody();
 
+		System.out.println(result);
 	}
 }
