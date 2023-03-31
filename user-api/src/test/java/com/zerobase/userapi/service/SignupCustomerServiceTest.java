@@ -4,6 +4,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 import com.zerobase.userapi.domain.SignUpForm;
 import com.zerobase.userapi.domain.model.Customer;
+import com.zerobase.userapi.service.customer.SignupCustomerService;
 import java.time.LocalDate;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -2,7 +2,7 @@ package com.zerobase.userapi.config.filter;
 
 import com.zerobase.domain.config.JwtAuthenticationProvider;
 import com.zerobase.domain.domain.common.UserVo;
-import com.zerobase.userapi.service.CustomerService;
+import com.zerobase.userapi.service.customer.CustomerService;
 import java.io.IOException;
 import javax.servlet.Filter;
 import javax.servlet.FilterChain;

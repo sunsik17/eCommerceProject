@@ -1,4 +1,4 @@
-package com.zerobase.userapi.service;
+package com.zerobase.userapi.service.customer;
 
 import static com.zerobase.userapi.exception.ErrorCode.ALREADY_VERIFY;
 import static com.zerobase.userapi.exception.ErrorCode.EXPIRE_CODE;

@@ -7,7 +7,7 @@ import com.zerobase.domain.domain.common.UserVo;
 import com.zerobase.userapi.domain.customer.CustomerDto;
 import com.zerobase.userapi.domain.model.Customer;
 import com.zerobase.userapi.exception.CustomException;
-import com.zerobase.userapi.service.CustomerService;
+import com.zerobase.userapi.service.customer.CustomerService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
