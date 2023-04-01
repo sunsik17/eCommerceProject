@@ -1,0 +1,63 @@
+### 회원가입 ( 고객 )
+POST http://localhost:8082/signup/customer
+Content-Type: application/json
+
+{
+  "birth": "1995-08-17",
+  "email": "sunsig21c@gmail.com",
+  "name": "sad",
+  "password": "pwpwpw",
+  "phone": "01033333333"
+}
+### 이메일 인증 - 고객
+GET http://localhost:8082/signup/customer/verify?email=sunsig21c@gmail.com&code=7uVuws7MY8
+Content-Type: application/json
+
+### 로그인 - 고객
+POST http://localhost:8082/signin/customer
+Content-Type: application/json
+
+{
+  "email": "sunsig21c@gmail.com",
+  "password": "pwpwpw"
+}
+
+### 회원 정보 조회 - 고객
+GET http://localhost:8082/customer/getInfo
+X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJMR3pqdWEyK1JDWDFTR0t0dlJGeFJwUnlvd3VGSG9ZOXpVZk1DUUtUMWVrPSIsImp0aSI6IlN1YkhlS1VSUnJlUVkrV1NPbkJrdGc9PSIsInJvbGVzIjoiQ1VTVE9NRVIiLCJpYXQiOjE2ODAzNzYzNTMsImV4cCI6MTY4MDQ2Mjc1M30.JOsW46DlorX2blVcWtwwZoH7rPJYrcSvHYU6cueFV1M
+
+### 잔액 변경 - 고객
+POST http://localhost:8082/customer/balance
+Content-Type: application/json
+X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJMR3pqdWEyK1JDWDFTR0t0dlJGeFJwUnlvd3VGSG9ZOXpVZk1DUUtUMWVrPSIsImp0aSI6IlN1YkhlS1VSUnJlUVkrV1NPbkJrdGc9PSIsInJvbGVzIjoiQ1VTVE9NRVIiLCJpYXQiOjE2ODAzNzYzNTMsImV4cCI6MTY4MDQ2Mjc1M30.JOsW46DlorX2blVcWtwwZoH7rPJYrcSvHYU6cueFV1M
+
+{
+  "from": "admin",
+  "message": "잔액 변경",
+  "money": 5000
+}
+#######################
+
+### 회원가입 - 셀러
+POST http://localhost:8082/signup/seller
+Content-Type: application/json
+
+{
+  "birth": "1995-08-17",
+  "email": "sunsig21c@gmail.com",
+  "name": "sad",
+  "password": "pwpwpw",
+  "phone": "01033333333"
+}
+### 이메일 인증 - 고객
+GET http://localhost:8082/signup/seller/verify?email=sunsig21c@gmail.com&code=0E2GOtQe0h
+Content-Type: application/json
+
+### 로그인 - 셀러
+POST http://localhost:8082/signin/seller
+Content-Type: application/json
+
+{
+  "email": "sunsig21c@gmail.com",
+  "password": "pwpwpw"
+}
