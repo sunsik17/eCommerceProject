@@ -58,3 +58,13 @@ X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJMR3pqdWEyK1JDWDFTR0t0dlJGeFJwUnlvd
   "name": "나익기",
   "price": 100000
 }
+
+### 상품 삭제
+DELETE http://localhost:8083/seller/product?id=1
+Content-Type: application/json
+X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJMR3pqdWEyK1JDWDFTR0t0dlJGeFJwUnlvd3VGSG9ZOXpVZk1DUUtUMWVrPSIsImp0aSI6IkNtWUR2NU1LNVlVeWlrOEtHTkR3b3c9PSIsInJvbGVzIjoiU0VMTEVSIiwiaWF0IjoxNjgwNDQxMDM3LCJleHAiOjE2ODA1Mjc0Mzd9.MIyEDJphAfpYc3zjI-X3qvU3ihDBTlCUhl4ISubgEa8
+
+### 상품 아이템 삭제
+DELETE http://localhost:8083/seller/product/item?id=2
+Content-Type: application/json
+X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJMR3pqdWEyK1JDWDFTR0t0dlJGeFJwUnlvd3VGSG9ZOXpVZk1DUUtUMWVrPSIsImp0aSI6IkNtWUR2NU1LNVlVeWlrOEtHTkR3b3c9PSIsInJvbGVzIjoiU0VMTEVSIiwiaWF0IjoxNjgwNDQxMDM3LCJleHAiOjE2ODA1Mjc0Mzd9.MIyEDJphAfpYc3zjI-X3qvU3ihDBTlCUhl4ISubgEa8

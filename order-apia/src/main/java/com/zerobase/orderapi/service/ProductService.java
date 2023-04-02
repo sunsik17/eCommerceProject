@@ -42,4 +42,12 @@ public class ProductService {
 		}
 		return product;
 	}
+
+	@Transactional
+	public void deleteProduct(Long seller, Long productId) {
+		Product product = productRepository.findBySellerIdAndId(seller, productId)
+				.orElseThrow(() -> new CustomException(ErrorCode.NOT_FOUND_PRODUCT));
+
+		productRepository.delete(product);
+	}
 }
