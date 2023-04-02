@@ -1,11 +1,13 @@
 package com.zerobase.orderapi.service;
 
+import static com.zerobase.orderapi.exception.ErrorCode.NOT_FOUND_ITEM;
 import static com.zerobase.orderapi.exception.ErrorCode.NOT_FOUND_PRODUCT;
 import static com.zerobase.orderapi.exception.ErrorCode.SAME_ITEM_NAME;
 
 import com.zerobase.orderapi.domain.model.Product;
 import com.zerobase.orderapi.domain.model.ProductItem;
 import com.zerobase.orderapi.domain.product.AddProductItemForm;
+import com.zerobase.orderapi.domain.product.UpdateProductItemFrom;
 import com.zerobase.orderapi.domain.repository.ProductItemRepository;
 import com.zerobase.orderapi.domain.repository.ProductRepository;
 import com.zerobase.orderapi.exception.CustomException;
@@ -34,5 +36,16 @@ public class ProductItemService {
 		return product;
 	}
 
+	@Transactional
+	public ProductItem updateProductItem(Long sellerId, UpdateProductItemFrom form) {
+		ProductItem productItem = productItemRepository.findById(form.getId())
+			.filter(pi -> pi.getSellerId().equals(sellerId))
+			.orElseThrow(() -> new CustomException(NOT_FOUND_ITEM));
+
+		productItem.setName(form.getName());
+		productItem.setCount(form.getCount());
+		productItem.setPrice(form.getPrice());
+		return productItem;
+	}
 
 }
