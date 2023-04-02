@@ -1,7 +1,7 @@
 package com.zerobase.userapi.service.seller;
 
 import com.zerobase.userapi.domain.model.Seller;
-import com.zerobase.userapi.repository.SellerRepository;
+import com.zerobase.userapi.domain.repository.SellerRepository;
 import java.util.Optional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;

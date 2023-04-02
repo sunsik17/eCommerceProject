@@ -8,7 +8,7 @@ import static com.zerobase.userapi.exception.ErrorCode.WRONG_VERIFICATION;
 import com.zerobase.userapi.domain.SignUpForm;
 import com.zerobase.userapi.domain.model.Seller;
 import com.zerobase.userapi.exception.CustomException;
-import com.zerobase.userapi.repository.SellerRepository;
+import com.zerobase.userapi.domain.repository.SellerRepository;
 import java.time.LocalDateTime;
 import java.util.Optional;
 import lombok.RequiredArgsConstructor;

@@ -50,7 +50,7 @@ Content-Type: application/json
   "phone": "01033333333"
 }
 ### 이메일 인증 - 고객
-GET http://localhost:8082/signup/seller/verify?email=sunsig21c@gmail.com&code=0E2GOtQe0h
+GET http://localhost:8082/signup/seller/verify?email=sunsig21c@gmail.com&code=AKZeribUmR
 Content-Type: application/json
 
 ### 로그인 - 셀러

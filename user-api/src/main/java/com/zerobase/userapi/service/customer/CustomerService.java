@@ -1,7 +1,7 @@
 package com.zerobase.userapi.service.customer;
 
 import com.zerobase.userapi.domain.model.Customer;
-import com.zerobase.userapi.repository.CustomerRepository;
+import com.zerobase.userapi.domain.repository.CustomerRepository;
 import java.util.Optional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
