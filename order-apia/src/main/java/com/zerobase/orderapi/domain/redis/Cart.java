@@ -15,11 +15,14 @@ import org.springframework.data.redis.core.RedisHash;
 @NoArgsConstructor
 @RedisHash("Cart")
 public class Cart {
-
 	@Id
 	private Long customerId;
 	private List<Product> products = new ArrayList<>();
 	private List<String> messages = new ArrayList<>();
+
+	public Cart (Long customerId){
+		this.customerId = customerId;
+	}
 
 	public void addMessage(String message) {
 		this.messages.add(message);
