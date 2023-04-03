@@ -11,6 +11,7 @@ import com.zerobase.orderapi.exception.CustomException;
 import com.zerobase.orderapi.service.CartService;
 import com.zerobase.orderapi.service.ProductSearchService;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -123,7 +124,9 @@ public class CartApplication {
 	private boolean addAble(Cart cart, Product product, AddProductCartForm form) {
 		Cart.Product cartProduct =
 			cart.getProducts().stream().filter(p -> p.getId().equals(form.getId()))
-				.findFirst().orElseThrow(() -> new CustomException(NOT_FOUND_PRODUCT));
+				.findFirst().orElse(Cart.Product.builder()
+					.id(product.getId())
+					.items(Collections.emptyList()).build());
 
 		Map<Long, Integer> cartItemCountMap = cartProduct.getItems().stream()
 			.collect(Collectors.toMap(Cart.ProductItem::getId, Cart.ProductItem::getCount));
@@ -134,8 +137,15 @@ public class CartApplication {
 		return 	form.getItems().stream().noneMatch(
 			formItem -> {
 				Integer cartCount = cartItemCountMap.get(formItem.getId());
+				if (cartCount == null) {
+					cartCount = 0;
+				}
 				Integer currentCount = currentItemCountMap.get(formItem.getId());
 				return formItem.getCount() + cartCount > currentCount;
 			});
+	}
+
+	public void clearCart(Long customerId) {
+		cartService.putCart(customerId, null);
 	}
 }
