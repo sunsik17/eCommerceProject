@@ -10,7 +10,7 @@ Content-Type: application/json
   "phone": "01033333333"
 }
 ### 이메일 인증 - 고객
-GET http://localhost:8082/signup/customer/verify?email=sunsig21c@gmail.com&code=7uVuws7MY8
+GET http://localhost:8082/signup/customer/verify?email=sunsig21c@gmail.com&code=YaxPAQtHgW
 Content-Type: application/json
 
 ### 로그인 - 고객
@@ -29,12 +29,12 @@ X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJMR3pqdWEyK1JDWDFTR0t0dlJGeFJwUnlvd
 ### 잔액 변경 - 고객
 POST http://localhost:8082/customer/balance
 Content-Type: application/json
-X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJMR3pqdWEyK1JDWDFTR0t0dlJGeFJwUnlvd3VGSG9ZOXpVZk1DUUtUMWVrPSIsImp0aSI6IlN1YkhlS1VSUnJlUVkrV1NPbkJrdGc9PSIsInJvbGVzIjoiQ1VTVE9NRVIiLCJpYXQiOjE2ODAzNzYzNTMsImV4cCI6MTY4MDQ2Mjc1M30.JOsW46DlorX2blVcWtwwZoH7rPJYrcSvHYU6cueFV1M
+X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJMR3pqdWEyK1JDWDFTR0t0dlJGeFJwUnlvd3VGSG9ZOXpVZk1DUUtUMWVrPSIsImp0aSI6IkNtWUR2NU1LNVlVeWlrOEtHTkR3b3c9PSIsInJvbGVzIjoiQ1VTVE9NRVIiLCJpYXQiOjE2ODA1MjQ0MTYsImV4cCI6MTY4MDYxMDgxNn0.QyE_ufIp2j0R0wTjTth3QxSSPZyuefjvnouKdHJCqUg
 
 {
   "from": "admin",
   "message": "잔액 변경",
-  "money": 5000
+  "money": 500000
 }
 #######################
 

@@ -1,7 +1,7 @@
 ### 상품 등록
 POST http://localhost:8083/seller/product
 Content-Type: application/json
-X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJMR3pqdWEyK1JDWDFTR0t0dlJGeFJwUnlvd3VGSG9ZOXpVZk1DUUtUMWVrPSIsImp0aSI6IkNtWUR2NU1LNVlVeWlrOEtHTkR3b3c9PSIsInJvbGVzIjoiU0VMTEVSIiwiaWF0IjoxNjgwNDQxMDM3LCJleHAiOjE2ODA1Mjc0Mzd9.MIyEDJphAfpYc3zjI-X3qvU3ihDBTlCUhl4ISubgEa8
+X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJMR3pqdWEyK1JDWDFTR0t0dlJGeFJwUnlvd3VGSG9ZOXpVZk1DUUtUMWVrPSIsImp0aSI6IkNtWUR2NU1LNVlVeWlrOEtHTkR3b3c9PSIsInJvbGVzIjoiU0VMTEVSIiwiaWF0IjoxNjgwNTI0MzA5LCJleHAiOjE2ODA2MTA3MDl9.m9n10jUdyJnoA1kxiUjYZCnplyhRZP9s2FzInPEPDI8
 
 {
   "description": "상품 설명",
@@ -17,7 +17,7 @@ X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJMR3pqdWEyK1JDWDFTR0t0dlJGeFJwUnlvd
 ### 상품 아이템 추가
 POST http://localhost:8083/seller/product/item
 Content-Type: application/json
-X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJMR3pqdWEyK1JDWDFTR0t0dlJGeFJwUnlvd3VGSG9ZOXpVZk1DUUtUMWVrPSIsImp0aSI6IkNtWUR2NU1LNVlVeWlrOEtHTkR3b3c9PSIsInJvbGVzIjoiU0VMTEVSIiwiaWF0IjoxNjgwNDQxMDM3LCJleHAiOjE2ODA1Mjc0Mzd9.MIyEDJphAfpYc3zjI-X3qvU3ihDBTlCUhl4ISubgEa8
+X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJMR3pqdWEyK1JDWDFTR0t0dlJGeFJwUnlvd3VGSG9ZOXpVZk1DUUtUMWVrPSIsImp0aSI6IkNtWUR2NU1LNVlVeWlrOEtHTkR3b3c9PSIsInJvbGVzIjoiU0VMTEVSIiwiaWF0IjoxNjgwNTI0MzA5LCJleHAiOjE2ODA2MTA3MDl9.m9n10jUdyJnoA1kxiUjYZCnplyhRZP9s2FzInPEPDI8
 
 
 {
@@ -30,7 +30,7 @@ X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJMR3pqdWEyK1JDWDFTR0t0dlJGeFJwUnlvd
 ### 상품 수정
 PUT http://localhost:8083/seller/product
 Content-Type: application/json
-X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJMR3pqdWEyK1JDWDFTR0t0dlJGeFJwUnlvd3VGSG9ZOXpVZk1DUUtUMWVrPSIsImp0aSI6IkNtWUR2NU1LNVlVeWlrOEtHTkR3b3c9PSIsInJvbGVzIjoiU0VMTEVSIiwiaWF0IjoxNjgwNDQxMDM3LCJleHAiOjE2ODA1Mjc0Mzd9.MIyEDJphAfpYc3zjI-X3qvU3ihDBTlCUhl4ISubgEa8
+X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJMR3pqdWEyK1JDWDFTR0t0dlJGeFJwUnlvd3VGSG9ZOXpVZk1DUUtUMWVrPSIsImp0aSI6IkNtWUR2NU1LNVlVeWlrOEtHTkR3b3c9PSIsInJvbGVzIjoiU0VMTEVSIiwiaWF0IjoxNjgwNTI0MzA5LCJleHAiOjE2ODA2MTA3MDl9.m9n10jUdyJnoA1kxiUjYZCnplyhRZP9s2FzInPEPDI8
 
 {
   "description": "상품 설명",
@@ -48,7 +48,7 @@ X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJMR3pqdWEyK1JDWDFTR0t0dlJGeFJwUnlvd
 ### 상품 아이템 수정
 PUT http://localhost:8083/seller/product/item
 Content-Type: application/json
-X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJMR3pqdWEyK1JDWDFTR0t0dlJGeFJwUnlvd3VGSG9ZOXpVZk1DUUtUMWVrPSIsImp0aSI6IkNtWUR2NU1LNVlVeWlrOEtHTkR3b3c9PSIsInJvbGVzIjoiU0VMTEVSIiwiaWF0IjoxNjgwNDQxMDM3LCJleHAiOjE2ODA1Mjc0Mzd9.MIyEDJphAfpYc3zjI-X3qvU3ihDBTlCUhl4ISubgEa8
+X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJMR3pqdWEyK1JDWDFTR0t0dlJGeFJwUnlvd3VGSG9ZOXpVZk1DUUtUMWVrPSIsImp0aSI6IkNtWUR2NU1LNVlVeWlrOEtHTkR3b3c9PSIsInJvbGVzIjoiU0VMTEVSIiwiaWF0IjoxNjgwNTI0MzA5LCJleHAiOjE2ODA2MTA3MDl9.m9n10jUdyJnoA1kxiUjYZCnplyhRZP9s2FzInPEPDI8
 
 
 {
@@ -80,7 +80,7 @@ Content-Type: application/json
 ### 장바구니 추가
 POST http://localhost:8083/customer/cart
 Content-Type: application/json
-X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJMR3pqdWEyK1JDWDFTR0t0dlJGeFJwUnlvd3VGSG9ZOXpVZk1DUUtUMWVrPSIsImp0aSI6IkNtWUR2NU1LNVlVeWlrOEtHTkR3b3c9PSIsInJvbGVzIjoiU0VMTEVSIiwiaWF0IjoxNjgwNDQxMDM3LCJleHAiOjE2ODA1Mjc0Mzd9.MIyEDJphAfpYc3zjI-X3qvU3ihDBTlCUhl4ISubgEa8
+X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJMR3pqdWEyK1JDWDFTR0t0dlJGeFJwUnlvd3VGSG9ZOXpVZk1DUUtUMWVrPSIsImp0aSI6IkNtWUR2NU1LNVlVeWlrOEtHTkR3b3c9PSIsInJvbGVzIjoiQ1VTVE9NRVIiLCJpYXQiOjE2ODA1MjQ0MTYsImV4cCI6MTY4MDYxMDgxNn0.QyE_ufIp2j0R0wTjTth3QxSSPZyuefjvnouKdHJCqUg
 
 {
   "description": "상품 설명",
@@ -95,4 +95,34 @@ X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJMR3pqdWEyK1JDWDFTR0t0dlJGeFJwUnlvd
   ],
   "name": "나이키 에어포스 리미티드 에디션",
   "sellerId": 1
+}
+### 장바구니 조회
+GET http://localhost:8083/customer/cart
+Content-Type: application/json
+X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJMR3pqdWEyK1JDWDFTR0t0dlJGeFJwUnlvd3VGSG9ZOXpVZk1DUUtUMWVrPSIsImp0aSI6IkNtWUR2NU1LNVlVeWlrOEtHTkR3b3c9PSIsInJvbGVzIjoiQ1VTVE9NRVIiLCJpYXQiOjE2ODA1MjQ0MTYsImV4cCI6MTY4MDYxMDgxNn0.QyE_ufIp2j0R0wTjTth3QxSSPZyuefjvnouKdHJCqUg
+
+### 장바구니 주문
+POST http://localhost:8083/customer/cart/order
+Content-Type: application/json
+X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJMR3pqdWEyK1JDWDFTR0t0dlJGeFJwUnlvd3VGSG9ZOXpVZk1DUUtUMWVrPSIsImp0aSI6IkNtWUR2NU1LNVlVeWlrOEtHTkR3b3c9PSIsInJvbGVzIjoiQ1VTVE9NRVIiLCJpYXQiOjE2ODA1MjQ0MTYsImV4cCI6MTY4MDYxMDgxNn0.QyE_ufIp2j0R0wTjTth3QxSSPZyuefjvnouKdHJCqUg
+
+{
+  "customerId": 1,
+  "products": [
+    {
+      "id": 1,
+      "sellerId": 1,
+      "name": "나이키 에어포스 리미티드 에디션",
+      "description": "상품 설명",
+      "items": [
+        {
+          "id": 1,
+          "name": "280",
+          "count": 1,
+          "price": 100000
+        }
+      ]
+    }
+  ],
+  "messages": []
 }
