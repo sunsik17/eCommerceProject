@@ -76,3 +76,23 @@ Content-Type: application/json
 ### 상품 디테일 검색
 GET http://localhost:8083/search/product/detail?productId=1
 Content-Type: application/json
+
+### 장바구니 추가
+POST http://localhost:8083/customer/cart
+Content-Type: application/json
+X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJMR3pqdWEyK1JDWDFTR0t0dlJGeFJwUnlvd3VGSG9ZOXpVZk1DUUtUMWVrPSIsImp0aSI6IkNtWUR2NU1LNVlVeWlrOEtHTkR3b3c9PSIsInJvbGVzIjoiU0VMTEVSIiwiaWF0IjoxNjgwNDQxMDM3LCJleHAiOjE2ODA1Mjc0Mzd9.MIyEDJphAfpYc3zjI-X3qvU3ihDBTlCUhl4ISubgEa8
+
+{
+  "description": "상품 설명",
+  "id": 1,
+  "items": [
+    {
+      "count": 1,
+      "id": 1,
+      "name": "280",
+      "price": 100000
+    }
+  ],
+  "name": "나이키 에어포스 리미티드 에디션",
+  "sellerId": 1
+}
