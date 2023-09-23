@@ -17,7 +17,7 @@ class EmailSendServiceTest {
 		String result = mailgunClient.sendEmail(
 			SendMailForm
 				.builder()
-				.from("test@test.com")
+				.from("sunsig21c@gmail.com")
 				.to("sunsig21c@gmail.com")
 				.subject("send email testing")
 				.text("simple email send test")

@@ -46,14 +46,14 @@ public class SignupCustomerService {
 	}
 
 	@Transactional
-	public LocalDateTime changeCustomerValidateEmail(Long customerId, String verificationCode) {
+	public void changeCustomerValidateEmail(Long customerId, String verificationCode) {
 		Optional<Customer> customerOptional = customerRepository.findById(customerId);
 
 		if (customerOptional.isPresent()) {
 			Customer customer = customerOptional.get();
 			customer.setVerificationCode(verificationCode);
 			customer.setVerifyExpired(LocalDateTime.now().plusDays(1));
-			return customer.getVerifyExpired();
+			return;
 		}
 		throw new CustomException(NOT_FOUND_USER);
 	}

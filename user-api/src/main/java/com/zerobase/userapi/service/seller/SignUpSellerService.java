@@ -45,14 +45,14 @@ public class SignUpSellerService {
 		seller.setVerify(true);
 	}
 	@Transactional
-	public LocalDateTime changeSellerValidateEmail(Long sellerId, String verificationCode) {
+	public void changeSellerValidateEmail(Long sellerId, String verificationCode) {
 		Optional<Seller> sellerOptional = sellerRepository.findById(sellerId);
 
 		if (sellerOptional.isPresent()) {
 			Seller seller = sellerOptional.get();
 			seller.setVerificationCode(verificationCode);
 			seller.setVerifyExpired(LocalDateTime.now().plusDays(1));
-			return seller.getVerifyExpired();
+			return;
 		}
 		throw new CustomException(NOT_FOUND_USER);
 	}
