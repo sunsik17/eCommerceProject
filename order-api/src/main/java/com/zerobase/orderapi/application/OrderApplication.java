@@ -9,6 +9,7 @@ import com.zerobase.orderapi.domain.model.ProductItem;
 import com.zerobase.orderapi.domain.redis.Cart;
 import com.zerobase.orderapi.exception.CustomException;
 import com.zerobase.orderapi.service.ProductItemService;
+import java.util.Objects;
 import java.util.stream.IntStream;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -34,7 +35,7 @@ public class OrderApplication {
 		CustomerDto customerDto = userClient.getCustomerInfo(token).getBody();
 
 		Integer totalPrice = getTotalPrice(cart);
-		if (customerDto.getBalance() < totalPrice) {
+		if (Objects.requireNonNull(customerDto).getBalance() < totalPrice) {
 			throw new CustomException(ORDER_FAIL_CHECK_MONEY);
 		}
 		// 롤백 계획 생각해야함
